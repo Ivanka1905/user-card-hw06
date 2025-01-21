@@ -1,17 +1,25 @@
-body{
-   font-family: sans-serif;
+body {
+  font-family: sans-serif;
 }
- address {
-     font-style: inherit;
- }
- a{
-        color: inherit;
-text-decoration: none;
- }
-.container{
-    width: 450px;
-    height: 610px;
-    /* background-color: #fff; */
-    border-radius: 3%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+address {
+  font-style: inherit;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.container {
+  width: 450px;
+  height: 610px;
+  border-radius: 3%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer{
+  display: flex;
+  background-color: rgb(8, 54, 85);
+  height: 90px;
+  color: palevioletred;
+  align-items: center;
+  justify-content: center;
 }
