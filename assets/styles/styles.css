@@ -38,41 +38,55 @@ li {
   height: 610px;
   border-radius: 3%;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
 }
-
 
 footer > ul {
   display: flex;
   background-color: rgb(8, 54, 85);
   height: 90px;
   width: inherit;
+  border-radius: 3%;
   color: #d87093;
   align-items: center;
   justify-content: center;
 }
 
-footer > ul > li {
+.footer-img {
   width: 33.33%;
   height: inherit;
-  border-right: 1px solid rgb(27, 71, 100);
-  /* box-shadow: 0 0 10px rgb(24, 76, 110); */
+  font-size: 14px;
+  line-height: 1.4em;
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
+  gap: 14px;
+}
+.footer-img-post,
+.footer-img-favorit {
+  border-right: 1px solid rgb(27, 71, 100);
 }
 
-.svg {
-    width: 50px;
-    height: 50px;
-    /* display: flex; */
-    color: blueviolet;
-    /* background-color: #fff; */
+.footer-img::before {
+  content: "";
+  width: 34px;
+  height: 34px;
+  background-size: cover;
 }
-
-/* footer>div>span{ */
-/* color: rgb(248, 250, 251); */
-/* }  */
-/* .footer-text-light{
-    color: rgb(248, 250, 251);
-} */
+.footer-img-post::before {
+  background-image: url("../svg/image-svgrepo-com.svg");
+}
+.footer-img-favorit::before {
+  background-image: url("../svg/heart-svgrepo-com.svg");
+}
+.footer-img-message::before {
+  background-image: url("../svg/paper-plane-svgrepo-com.svg");
+}
+.footer-text-light {
+  display: block;
+  text-align: center;
+  color: var(--background-color);
+}
