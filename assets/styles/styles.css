@@ -9,6 +9,7 @@
 body {
   font-family: sans-serif;
   background-color: var(--background-color);
+  text-align: center;
 }
 
 address {
@@ -41,16 +42,32 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  text-align: center;
+  overflow: hidden;
+}
+header {
+  padding-top: 24px;
 }
 
+header > address > a::before {
+  content: "";
+  display: inline-flex;
+  width: 10px;
+  height: 10px;
+  margin: 0 6px;
+  padding: 3px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-image: url(../svg/location-arrow.svg);
+  background-size: 80%;
+  background-position: left;
+  background-repeat: no-repeat;
+}
 footer > ul {
   display: flex;
   background-color: rgb(8, 54, 85);
-  height: 90px;
-  width: inherit;
-  border-radius: 3%;
-  color: #d87093;
+  height: 100px;
+  width: 100%;
+  color: var(--accent-text-color);
   align-items: center;
   justify-content: center;
 }
